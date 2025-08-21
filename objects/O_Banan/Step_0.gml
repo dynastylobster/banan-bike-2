@@ -122,6 +122,7 @@ if InputReleased(INPUT_VERB.ACTION) {
 		if chargetimer >= 0 pal = 0;
 		if chargetimer > 78 {
 			instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth-10,O_MuzzleFlashBig)
+		instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth-10,O_BananBulletBig)
 				x_offset = -(facing*12)
 			}
 		chargetimer = 0;
