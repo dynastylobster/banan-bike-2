@@ -21,4 +21,6 @@ shot = false;
 shottimer = 0;
 displaypal = 0
 x_offset =0 ;
+bigjump = false;
+boost = 0;
 instance_create_depth(x,y,depth+10,O_Shadow)

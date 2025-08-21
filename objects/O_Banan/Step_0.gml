@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if xspeed > 0.125 driving = true;
+if boost > 0 boost -= 0.125
+if boost < 0 boost += 0.125
 if !place_meeting(x,y+1,[WALL,SLOPE]) {
 		y += yspeed
 		yspeed += grav
@@ -12,6 +14,7 @@ while place_meeting(x,y,[WALL,SLOPE]) {
 		yspeed = 0;
 	}
 	
+	if !turning {
 if InputPressed(INPUT_VERB.UP) {
 		if y_offset < 48 {
 			y_offset += 16	
@@ -22,6 +25,8 @@ if InputPressed(INPUT_VERB.DOWN) {
 			y_offset -= 16	
 		}
 	}
+	}
+	
 
 if !turning {
 _yoffsetvisual = lerp(_yoffsetvisual,y_offset,0.25)
@@ -31,7 +36,7 @@ if turning {
 	_yoffsetvisual = lerp(_yoffsetvisual,y_offset,0.05)
 }
 
-if (InputPressed(INPUT_VERB.ACCEPT)) and grounded {
+if (InputPressed(INPUT_VERB.ACCEPT)) and grounded and !turning {
 		yspeed = -jumpspeed
 		y-= 6
 	}
@@ -61,8 +66,10 @@ if InputCheck(INPUT_VERB.BUMPL) {
 		}
 	} else if abs(xspeed) > 0 {
 		if abs(xspeed) < 0.8 xspeed = 0
+			if grounded and !turning {
 			if xspeed < 0 xspeed += accel
 			if xspeed > 0 xspeed -= accel
+			}
 		}
 x+= xspeed
 }
@@ -77,7 +84,7 @@ if place_meeting(x+facing*2,y,WALL) {
 		if facing = 1 x-= 0.5
 	}
 
-if (InputPressed(INPUT_VERB.BUMPR)) and !turning and grounded {
+if (InputPressed(INPUT_VERB.BUMPR)) and !turning and grounded and abs(xspeed) >= 2 {
 	image_index = 0;
 	image_speed =1;
 	switch y_offset {
@@ -93,6 +100,20 @@ if (InputPressed(INPUT_VERB.BUMPR)) and !turning and grounded {
 	alarm[0] = 30
 	turning = true;
 	}
+if InputPressed(INPUT_VERB.BUMPR) and !turning and grounded and abs(xspeed) < 2 {
+xspeed = 0;
+	yspeed = -2;
+	y -= 2
+	spr = S_Banan_Turn_Down
+	alarm[0] = 40
+	turning = true;	
+}
+
+
+if turning and alarm[0] = 10 {
+yspeed = -1
+y-= 1
+}
 	
 
 if place_meeting(x,y+7,[SLOPE]) and yspeed >= 0 {
@@ -101,8 +122,10 @@ if place_meeting(x,y+7,[SLOPE]) and yspeed >= 0 {
 		}
 	}
 	
-if alarm[0] > 15 image_index = 0;
+if alarm[0] > 15 and abs(xspeed) != 0 then image_index = 0;
 if alarm[0] > 0 and alarm[0] <= 15 image_index = 1
+
+
 
 if InputCheck(INPUT_VERB.ACTION) {
 	shottimer = 20
@@ -122,6 +145,10 @@ if InputReleased(INPUT_VERB.ACTION) {
 		if chargetimer >= 0 pal = 0;
 		if chargetimer > 78 {
 			instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth-10,O_MuzzleFlashBig)
+			if turning and abs(xspeed) <= 1.5 {
+					boost = 5* -facing
+					xspeed += boost
+				}
 		instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth-10,O_BananBulletBig)
 				x_offset = -(facing*12)
 			}
@@ -152,3 +179,9 @@ displaypal = ceil(pal)
 
 if x_offset > 0 x_offset -= 0.25
 if x_offset < 0 x_offset += 0.25
+
+if yspeed < -jumpspeed bigjump = true;
+if bigjump {
+spr = S_Banan_Slope1
+}
+if yspeed > 0 bigjump = false;
