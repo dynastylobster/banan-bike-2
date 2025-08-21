@@ -1,0 +1,18 @@
+/// @description Insert description here
+// You can write your code in this editor
+sprite_index = S_Shadow
+GenerateHitBox(x,y,24,16,-12,-24,O_Banan,0)
+GenerateHitBox(x,y,8,5,22,-2,O_Banan,1)
+_yoffsetvisual = y_offset
+jumpspeed = 3
+grounded = false;
+facing = 1;
+max_xspeed = 4;
+accel = 0.125
+driving = false;
+turning = false;
+sloping = false;
+spr = S_Banan
+starty = y;
+shadowy = y;
+instance_create_depth(x,y,depth+10,O_Shadow)
