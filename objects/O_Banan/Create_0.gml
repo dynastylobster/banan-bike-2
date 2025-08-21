@@ -15,4 +15,10 @@ sloping = false;
 spr = S_Banan
 starty = y;
 shadowy = y;
+chargetimer = 0;
+pal = 0
+shot = false;
+shottimer = 0;
+displaypal = 0
+x_offset =0 ;
 instance_create_depth(x,y,depth+10,O_Shadow)

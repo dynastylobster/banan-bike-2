@@ -2,8 +2,7 @@
 // You can write your code in this editor
 x = int64(owner.x)
 
-
-while !place_meeting(x,y,[SLOPE,WALL]) {
+while !place_meeting(x,y,[SLOPE,WALL]) and y < room_height {
 		y+= 1
 	}
 
