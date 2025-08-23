@@ -3,6 +3,7 @@
 sprite_index = S_Shadow
 GenerateHitBox(x,y,24,16,-12,-24,O_Banan,0)
 GenerateHitBox(x,y,8,5,22,-2,O_Banan,1)
+GenerateHitBox(x,y,8,5,-24,0,O_Banan,2)
 _yoffsetvisual = y_offset
 jumpspeed = 3
 grounded = false;
@@ -12,6 +13,8 @@ accel = 0.125
 driving = false;
 turning = false;
 sloping = false;
+ lanetimer = 0
+ yoffsetdir = 1;
 spr = S_Banan
 starty = y;
 shadowy = y;

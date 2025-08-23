@@ -31,6 +31,13 @@ switch owner.object_index {
 				if owner.facing = -1 x = owner.x - 24
 				owner.sloping = place_meeting(x,y,[SLOPE])
 			}
+			if hitboxnum = 2 {
+				
+				y = owner.y
+				if owner.facing = 1 x = owner.x - 24
+				if owner.facing = -1 x = owner.x + 24
+				owner.slopingbehind = place_meeting(x,y,[SLOPE])
+			}
 			break;
 		}
 	

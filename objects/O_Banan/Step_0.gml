@@ -14,23 +14,38 @@ while place_meeting(x,y,[WALL,SLOPE]) {
 		yspeed = 0;
 	}
 	
+
 	if !turning {
 if InputPressed(INPUT_VERB.UP) {
+	alarm[1] = 8
 		if y_offset < 48 {
 			y_offset += 16	
 		}
 	}
 if InputPressed(INPUT_VERB.DOWN) {
+	alarm[1] = 8
 		if y_offset > 0 {
 			y_offset -= 16	
 		}
 	}
 	}
 	
+	
+y_offset = clamp(y_offset,0,48)
+
+
 
 if !turning {
-_yoffsetvisual = lerp(_yoffsetvisual,y_offset,0.25)
+//_yoffsetvisual = lerp(_yoffsetvisual,y_offset,0.25)
+if _yoffsetvisual < y_offset then _yoffsetvisual += 2
+if _yoffsetvisual > y_offset then _yoffsetvisual -= 2
 }
+
+//_yoffsetvisual = int64(y_offset)
+y_offset = (y_offset div 16 * 16)
+
+
+
 if turning {
 	xspeed *= 0.95
 	_yoffsetvisual = lerp(_yoffsetvisual,y_offset,0.05)
@@ -53,10 +68,18 @@ image_speed = abs(xspeed)/2
 
 if sloping and !turning {
 	spr = S_Banan_Slope1
-	} else if !turning {
+	} else if !turning and !slopingbehind {
 	spr = S_Banan	
 	}
-
+if slopingbehind and !turning {
+	spr = S_Banan_Slope2
+	} else if !turning and !sloping {
+	spr = S_Banan	
+	}
+	
+if yspeed > 3 and !turning{
+	spr = S_Banan_Slope2
+}
 
 if !place_meeting(x+xspeed*1.5,y,[WALL]) {
 
@@ -72,7 +95,9 @@ if InputCheck(INPUT_VERB.BUMPL) {
 			}
 		}
 x+= xspeed
-}
+} else {
+	xspeed = 0;
+	}
 
 if turning and !place_meeting(x+xspeed*2,y,WALL) {
 	if alarm[0] < 20 xspeed -= facing * 0.25	
@@ -100,7 +125,7 @@ if (InputPressed(INPUT_VERB.BUMPR)) and !turning and grounded and abs(xspeed) >=
 	alarm[0] = 30
 	turning = true;
 	}
-if InputPressed(INPUT_VERB.BUMPR) and !turning and grounded and abs(xspeed) < 2 {
+if InputPressed(INPUT_VERB.BUMPR) and !turning and grounded and abs(xspeed) <= 0 {
 xspeed = 0;
 	yspeed = -2;
 	y -= 2
@@ -181,7 +206,7 @@ if x_offset > 0 x_offset -= 0.25
 if x_offset < 0 x_offset += 0.25
 
 if yspeed < -jumpspeed bigjump = true;
-if bigjump {
+if bigjump and !turning {
 spr = S_Banan_Slope1
 }
 if yspeed > 0 bigjump = false;
