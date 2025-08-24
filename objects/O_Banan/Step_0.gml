@@ -1,5 +1,23 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if audio_sound_get_pitch(SndBikeEngine) < 1.2 {
+audio_sound_pitch(SndBikeEngine,abs(xspeed/7) + pitchoffset)
+} else {
+		if xspeed < 2 audio_sound_pitch(SndBikeEngine,audio_sound_get_pitch(SndBikeEngine)-0.0125)
+	}
+
+if InputPressed(INPUT_VERB.BUMPL) {
+		if xspeed = 0 
+		{
+			audio_stop_sound(SndBikeStart)
+			audio_play_sound(SndBikeStart,0,0,1,0,1);
+		}
+	}
+
+if grounded pitchoffset = 0
+if !grounded pitchoffset = 0.2
+
 if xspeed > 0.125 driving = true;
 if boost > 0 boost -= 0.125
 if boost < 0 boost += 0.125
@@ -159,6 +177,8 @@ if InputCheck(INPUT_VERB.ACTION) {
 if InputPressed(INPUT_VERB.ACTION) {
 	if abs(x_offset) <= 4 {
 	if instance_number(O_BananBullet) <= 4  {
+		audio_play_sound(SndShoot,0,0,1,0,random_range(0.9,1.1))
+		audio_play_sound(SndShootPew,0,0,1,0,1)
 		instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth,O_BananBullet)
 		instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth-10,O_MuzzleFlash)
 	}
@@ -175,6 +195,7 @@ if InputReleased(INPUT_VERB.ACTION) {
 					xspeed += boost
 				}
 		instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth-10,O_BananBulletBig)
+		audio_play_sound(SndBigShoot,0,0,1,0,1)
 				x_offset = -(facing*12)
 			}
 		chargetimer = 0;

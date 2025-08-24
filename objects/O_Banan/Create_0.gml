@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 sprite_index = S_Shadow
+audio_play_sound(SndBikeEngine,0,true,1,0,1);
 GenerateHitBox(x,y,24,16,-12,-24,O_Banan,0)
 GenerateHitBox(x,y,8,5,22,-2,O_Banan,1)
 GenerateHitBox(x,y,8,5,-24,0,O_Banan,2)
+pitchoffset = 0;
 _yoffsetvisual = y_offset
 jumpspeed = 3
 grounded = false;

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SndBigShoot",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":1,
+  "conversionMode":0,
+  "duration":1.911111,
+  "name":"SndBigShoot",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SndBigShoot.ogg",
+  "type":1,
+  "volume":1.0,
+}
