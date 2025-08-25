@@ -1,19 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if audio_sound_get_pitch(SndBikeEngine) < 1.2 {
-audio_sound_pitch(SndBikeEngine,abs(xspeed/7) + pitchoffset)
-} else {
-		if xspeed < 2 audio_sound_pitch(SndBikeEngine,audio_sound_get_pitch(SndBikeEngine)-0.0125)
-	}
+audio_sound_pitch(SndBikeEngine, clamp(   (abs(xspeed/7) + pitchoffset + 0.5) , 0.8, 2  )       )
+
 
 if InputPressed(INPUT_VERB.BUMPL) {
 		if xspeed = 0 
 		{
 			audio_stop_sound(SndBikeStart)
-			audio_play_sound(SndBikeStart,0,0,1,0,1);
+			audio_play_sound(SndBikeStart,0,0,clamp((abs(xspeed/3)),0.25,1),0,1);
 		}
 	}
+audio_sound_gain(SndBikeEngine,clamp((abs(xspeed/3)),0.25,1),0);
 
 if grounded pitchoffset = 0
 if !grounded pitchoffset = 0.2

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":1,
   "conversionMode":0,
-  "duration":2.005782,
+  "duration":1.446372,
   "name":"SndShoot",
   "parent":{
     "name":"Sounds",

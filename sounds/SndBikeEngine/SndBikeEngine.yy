@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":1,
   "conversionMode":0,
-  "duration":10.963107,
+  "duration":5.49619,
   "name":"SndBikeEngine",
   "parent":{
     "name":"Sounds",
