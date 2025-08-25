@@ -381,6 +381,7 @@
     {"name":"S_Shadow","order":4,"path":"sprites/S_Shadow/S_Shadow.yy",},
     {"name":"S_ShadowSlope","order":5,"path":"sprites/S_ShadowSlope/S_ShadowSlope.yy",},
     {"name":"S_Slope","order":3,"path":"sprites/S_Slope/S_Slope.yy",},
+    {"name":"S_SmallFont","order":6,"path":"sprites/S_SmallFont/S_SmallFont.yy",},
     {"name":"S_TrackTiles","order":2,"path":"sprites/S_TrackTiles/S_TrackTiles.yy",},
     {"name":"S_Wall","order":4,"path":"sprites/S_Wall/S_Wall.yy",},
     {"name":"T_ColTiles","order":1,"path":"tilesets/T_ColTiles/T_ColTiles.yy",},

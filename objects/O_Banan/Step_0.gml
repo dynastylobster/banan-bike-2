@@ -229,3 +229,5 @@ if bigjump and !turning {
 spr = S_Banan_Slope1
 }
 if yspeed > 0 bigjump = false;
+
+if grounded and yspeed > 0 yspeed = 0

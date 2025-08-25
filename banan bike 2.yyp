@@ -444,6 +444,7 @@
     {"id":{"name":"S_Shadow","path":"sprites/S_Shadow/S_Shadow.yy",},},
     {"id":{"name":"S_ShadowSlope","path":"sprites/S_ShadowSlope/S_ShadowSlope.yy",},},
     {"id":{"name":"S_Slope","path":"sprites/S_Slope/S_Slope.yy",},},
+    {"id":{"name":"S_SmallFont","path":"sprites/S_SmallFont/S_SmallFont.yy",},},
     {"id":{"name":"S_TrackTiles","path":"sprites/S_TrackTiles/S_TrackTiles.yy",},},
     {"id":{"name":"S_Wall","path":"sprites/S_Wall/S_Wall.yy",},},
     {"id":{"name":"T_ColTiles","path":"tilesets/T_ColTiles/T_ColTiles.yy",},},
