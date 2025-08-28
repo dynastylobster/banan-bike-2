@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-camera_set_view_pos(view_camera[0],cam_x,cam_y);
+cam_x = clamp(cam_x,0,room_width-426)
+camera_set_view_pos(view_camera[0],  clamp(cam_x + cam_offset,0,room_width-426)   ,cam_y);
 
 
 

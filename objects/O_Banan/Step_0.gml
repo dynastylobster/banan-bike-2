@@ -184,7 +184,18 @@ if InputPressed(INPUT_VERB.ACTION) {
 	}
 	}
 	
+if InputCheck(INPUT_VERB.ACTION) and !audio_is_playing(SndCharge) {
+		audio_play_sound(SndCharge,0,true,1)
+	}
+if chargetimer < 78 and chargetimer > 0 {
+	chargevolume += (1/78)/2
+		audio_sound_gain(SndCharge,chargevolume,0)
+	}
+	
 if InputReleased(INPUT_VERB.ACTION) {
+	chargevolume = 0;
+	audio_sound_gain(SndCharge,0,0)
+	audio_stop_sound(SndCharge)
 		if chargetimer >= 0 pal = 0;
 		if chargetimer > 78 {
 			instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth-10,O_MuzzleFlashBig)

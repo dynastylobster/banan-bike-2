@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_alpha = 0;
+cam_offset = -120
+
 #macro CAM_X O_LevelObject.cam_x
 #macro CAM_Y O_LevelObject.cam_y
 

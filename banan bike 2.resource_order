@@ -355,6 +355,7 @@
     {"name":"SndBigShoot","order":2,"path":"sounds/SndBigShoot/SndBigShoot.yy",},
     {"name":"SndBikeEngine","order":3,"path":"sounds/SndBikeEngine/SndBikeEngine.yy",},
     {"name":"SndBikeStart","order":4,"path":"sounds/SndBikeStart/SndBikeStart.yy",},
+    {"name":"SndCharge","order":5,"path":"sounds/SndCharge/SndCharge.yy",},
     {"name":"SndShootPew","order":1,"path":"sounds/SndShootPew/SndShootPew.yy",},
     {"name":"B_GameBG_1","order":7,"path":"sprites/B_GameBG_1/B_GameBG_1.yy",},
     {"name":"B_GameBG_2","order":8,"path":"sprites/B_GameBG_2/B_GameBG_2.yy",},

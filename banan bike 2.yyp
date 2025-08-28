@@ -413,6 +413,7 @@
     {"id":{"name":"SndBigShoot","path":"sounds/SndBigShoot/SndBigShoot.yy",},},
     {"id":{"name":"SndBikeEngine","path":"sounds/SndBikeEngine/SndBikeEngine.yy",},},
     {"id":{"name":"SndBikeStart","path":"sounds/SndBikeStart/SndBikeStart.yy",},},
+    {"id":{"name":"SndCharge","path":"sounds/SndCharge/SndCharge.yy",},},
     {"id":{"name":"SndShoot","path":"sounds/SndShoot/SndShoot.yy",},},
     {"id":{"name":"SndShootPew","path":"sounds/SndShootPew/SndShootPew.yy",},},
     {"id":{"name":"B_GameBG_1","path":"sprites/B_GameBG_1/B_GameBG_1.yy",},},
