@@ -1,5 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+depth = 99 + y_offset;
+
+exhausttimer += 1+ int64(abs(xspeed))
+
+if exhausttimer >= 16 exhausttimer = 0;
+if exhausttimer = 0 {
+		instance_create_depth(x-(facing*26),(y-_yoffsetvisual)-9,depth,O_Exhaust);
+	}
 
 audio_sound_pitch(SndBikeEngine, clamp(   (abs(xspeed/7) + pitchoffset + 0.5) , 0.8, 2  )       )
 

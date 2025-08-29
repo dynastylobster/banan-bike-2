@@ -6,6 +6,7 @@ GenerateHitBox(x,y,24,16,-12,-24,O_Banan,0)
 GenerateHitBox(x,y,8,5,22,-2,O_Banan,1)
 GenerateHitBox(x,y,8,5,-24,0,O_Banan,2)
 audio_sound_gain(SndCharge,0,0)
+exhausttimer = 0;
 chargevolume = 0;
 pitchoffset = 0;
 _yoffsetvisual = y_offset
