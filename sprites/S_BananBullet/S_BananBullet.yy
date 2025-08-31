@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"S_BananBullet",
   "bboxMode":2,
-  "bbox_bottom":12,
+  "bbox_bottom":13,
   "bbox_left":3,
   "bbox_right":12,
   "bbox_top":8,

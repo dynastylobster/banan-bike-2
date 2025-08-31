@@ -253,6 +253,9 @@ if yspeed > 0 bigjump = false;
 
 if grounded and yspeed > 0 yspeed = 0
 
+if hit = false and chargetimer = 0 {
+		pal = 0;
+	}
 
 }
 
@@ -262,6 +265,7 @@ if hit = true {
 		pal = 3;
 	}
 if hittimer > 0 hittimer--;
+if hittimer <= 0 hit = false;
 
 if alarm[0] > 0 {if global.stop = true then alarm[0]++}
 if alarm[1] > 0 {if global.stop = true then alarm[1]++}

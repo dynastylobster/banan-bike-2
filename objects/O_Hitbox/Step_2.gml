@@ -44,6 +44,7 @@ switch owner.object_index {
 		
 		case O_Barrel: {
 			if hitboxnum = 0 {
+	/*
     show_debug_message("~~~~Barrel hitbox 0 running!\n");
     var hitbox = O_Banan.hitbox[0];
     if (!instance_exists(hitbox)) {
@@ -61,14 +62,17 @@ switch owner.object_index {
     }
     else {
         show_debug_message("No collision found.\n~~~~");
-    }
+    }*/
+	
+				if (place_meeting(x, y, O_Banan.hitbox[0])) and owner.y_offset = O_Banan.y_offset {
+						if !O_Banan.hit then HitPlayer(3);
+						with (owner) {
+							event_user(0);	
+						}
+					}
 			
 				y = owner.y-owner.y_offset -22
 				x = owner.x-8
-				
-				if owner.rolling {
-					y = owner.y-owner.y_offset -15
-				}
 				
 				if instance_place(x,y,O_BananBullet) {
 					

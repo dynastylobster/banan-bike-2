@@ -5,6 +5,6 @@ xoffset = x;
 startx =x;
 hitground = false;
 rolling = false;
-GenerateHitBox(x-12,y-y_offset,14,9,-14,0,self.id,0);
+GenerateHitBox(x-12,y-y_offset,14,5,-14,0,self.id,0);
 slopel = false;
 sloper = false;
