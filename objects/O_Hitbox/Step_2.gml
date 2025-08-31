@@ -1,10 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-
 x = owner.x + xoffset
-y = owner.y + yoffset
+//y = owner.y + yoffset
 
 if !global.stop {
 	
@@ -46,10 +44,24 @@ switch owner.object_index {
 		
 		case O_Barrel: {
 			if hitboxnum = 0 {
-				
-				if place_meeting(x,y,O_Banan.hitbox[0]) {
-						HitPlayer(2);
-					}
+    show_debug_message("~~~~Barrel hitbox 0 running!\n");
+    var hitbox = O_Banan.hitbox[0];
+    if (!instance_exists(hitbox)) {
+        show_debug_message("O_Banan has no hitbox!\n~~~~");
+        return;
+    }
+    var name = object_get_name(hitbox.object_index);
+    show_debug_message($"Checking for {name} at:\n{hitbox.bbox_left}, {hitbox.bbox_top}, {hitbox.bbox_right}, {hitbox.bbox_bottom}");
+    
+    show_debug_message($"My hitbox:\n{bbox_left}, {bbox_top}, {bbox_right}, {bbox_bottom}");
+
+    if (place_meeting(x, y, O_Banan.hitbox[0])) {
+        show_debug_message("Found a collision!\n~~~~");
+        HitPlayer(2);
+    }
+    else {
+        show_debug_message("No collision found.\n~~~~");
+    }
 			
 				y = owner.y-owner.y_offset -22
 				x = owner.x-8

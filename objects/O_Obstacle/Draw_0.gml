@@ -2,6 +2,7 @@
 // You can write your code in this editor
 pal_swap_set(S_ObsticlePal,pal,false);
 draw_sprite_ext(sprite_index,image_index,x,y-y_offset,image_xscale,image_yscale,0,c_white,1);
+
 pal_swap_reset();
 
 if hittimer > 0 {

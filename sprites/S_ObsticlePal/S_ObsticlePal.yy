@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":6,
   "bbox_left":0,
-  "bbox_right":7,
+  "bbox_right":15,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -19,7 +19,7 @@
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7bdae42c-d764-47e1-8383-e951cd40ea7a","blendMode":0,"displayName":"default","isLocked":false,"name":"7bdae42c-d764-47e1-8383-e951cd40ea7a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6c567ec7-0015-4e27-8a24-430b38ccc5dd","blendMode":0,"displayName":"default","isLocked":false,"name":"6c567ec7-0015-4e27-8a24-430b38ccc5dd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"S_ObsticlePal",
   "nineSlice":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":8,
+  "width":16,
 }

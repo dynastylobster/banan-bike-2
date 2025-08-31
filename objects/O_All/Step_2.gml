@@ -5,3 +5,4 @@ if place_meeting(x,y+2,SLOPE) {
 	} else {
 	shadowz = 0;	
 	}
+	

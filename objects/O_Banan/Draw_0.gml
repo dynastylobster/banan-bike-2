@@ -14,3 +14,4 @@ if global.debugmode {
 		draw_text(x,y-30,"grounded:"+string(grounded))
 		draw_text(x,y-40,"yspeed:"+string(yspeed))
 	}
+	
