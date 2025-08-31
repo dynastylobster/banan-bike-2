@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if ! global.stop {
+	
 depth = 99 + y_offset;
 
 exhausttimer += 1+ int64(abs(xspeed))
@@ -16,7 +18,7 @@ if InputPressed(INPUT_VERB.BUMPL) {
 		if xspeed = 0 
 		{
 			audio_stop_sound(SndBikeStart)
-			audio_play_sound(SndBikeStart,0,0,clamp((abs(xspeed/3)),0.25,1),0,1);
+			audio_play_sound(SndBikeStart,0,0,clamp((abs(xspeed/3)),0.25,global.sfxvolume),0,1);
 		}
 	}
 audio_sound_gain(SndBikeEngine,clamp((abs(xspeed/3)),0.25,1),0);
@@ -183,8 +185,8 @@ if InputCheck(INPUT_VERB.ACTION) {
 if InputPressed(INPUT_VERB.ACTION) {
 	if abs(x_offset) <= 4 {
 	if instance_number(O_BananBullet) <= 4  {
-		audio_play_sound(SndShoot,0,0,1,0,random_range(0.9,1.1))
-		audio_play_sound(SndShootPew,0,0,1,0,1)
+		audio_play_sound(SndShoot,0,0,global.sfxvolume,0,random_range(0.9,1.1))
+		audio_play_sound(SndShootPew,0,0,global.sfxvolume,0,1)
 		instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth,O_BananBullet)
 		instance_create_depth(x+20*facing,y-29-_yoffsetvisual,depth-10,O_MuzzleFlash)
 	}
@@ -193,7 +195,7 @@ if InputPressed(INPUT_VERB.ACTION) {
 	}
 	
 if InputCheck(INPUT_VERB.ACTION) and !audio_is_playing(SndCharge) {
-		audio_play_sound(SndCharge,0,true,1)
+		audio_play_sound(SndCharge,0,true,global.sfxvolume)
 	}
 if chargetimer < 78 and chargetimer > 0 {
 	chargevolume += (1/78)/2
@@ -250,3 +252,17 @@ spr = S_Banan_Slope1
 if yspeed > 0 bigjump = false;
 
 if grounded and yspeed > 0 yspeed = 0
+
+
+}
+
+if !InputCheck(INPUT_VERB.ACTION) audio_stop_sound(SndCharge);
+
+if hit = true {
+		pal = 3;
+	}
+if hittimer > 0 hittimer--;
+
+if alarm[0] > 0 {if global.stop = true then alarm[0]++}
+if alarm[1] > 0 {if global.stop = true then alarm[1]++}
+if alarm[3] > 0 {if global.stop = true then alarm[3]++}

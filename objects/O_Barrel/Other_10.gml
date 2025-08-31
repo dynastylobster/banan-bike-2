@@ -1,4 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-//owner.hitbox[hitboxnum] = self.id;
-depth -= 50
+
+// Inherit the parent event
+event_inherited();
+y-= 2
+yspeed = -3

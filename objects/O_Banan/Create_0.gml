@@ -2,10 +2,12 @@
 // You can write your code in this editor
 sprite_index = S_Shadow
 audio_play_sound(SndBikeEngine,0,true,1,0,1);
-GenerateHitBox(x,y,24,16,-12,-24,O_Banan,0)
+GenerateHitBox(x,y,24,10,-12,-24,O_Banan,0)
 GenerateHitBox(x,y,8,5,22,-2,O_Banan,1)
 GenerateHitBox(x,y,8,5,-24,0,O_Banan,2)
 audio_sound_gain(SndCharge,0,0)
+hit = false;
+hittimer = 0;
 exhausttimer = 0;
 chargevolume = 0;
 pitchoffset = 0;

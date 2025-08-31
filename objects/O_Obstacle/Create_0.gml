@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+instance_create_depth(x,y,depth+1,O_Shadow);
 event_inherited();
+hit = false;
+hittimer = 0;
 switch y_offset {
 	
 	case 0: 

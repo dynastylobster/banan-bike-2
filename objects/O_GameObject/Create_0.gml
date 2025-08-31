@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.stop = false;
+global.BananHitBox = noone;
+global.sfxvolume = 1
+global.paused = false;
+global.stoptimer = 0;
 global.debugmode = false;
 //First Init the Palette Swap System, specify the name of the pal swap shader in case you've changed it for some reason.
 pal_swap_init_system(shd_pal_swapper,shd_pal_html_sprite,shd_pal_html_surface);

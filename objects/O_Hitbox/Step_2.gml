@@ -1,9 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
+
 x = owner.x + xoffset
 y = owner.y + yoffset
 
-
+if !global.stop {
+	
+	
 switch owner.object_index {
 	
 		case  O_OnScreenTest : {
@@ -20,9 +25,7 @@ switch owner.object_index {
 		case  O_Banan : {
 			
 			if hitboxnum = 0 {
-				
 				y = owner.y-owner.y_offset -24
-				
 			}
 			if hitboxnum = 1 {
 				
@@ -40,7 +43,57 @@ switch owner.object_index {
 			}
 			break;
 		}
+		
+		case O_Barrel: {
+			if hitboxnum = 0 {
+				
+				if place_meeting(x,y,O_Banan.hitbox[0]) {
+						HitPlayer(2);
+					}
+			
+				y = owner.y-owner.y_offset -22
+				x = owner.x-8
+				
+				if owner.rolling {
+					y = owner.y-owner.y_offset -15
+				}
+				
+				if instance_place(x,y,O_BananBullet) {
+					
+				owner.xspeed = instance_place(x,y,O_BananBullet).xspeed * 0.5 ;
+				if instance_place(x,y,O_BananBullet).x > owner.x then owner.xspeed = -abs(owner.xspeed)
+				owner.xoffset = owner.x + sign(owner.xspeed)*8
+				
+				with owner {
+							event_user(0);
+						}
+					
+					with instance_place(x,y,O_BananBullet)	{
+						instance_destroy();	
+					}
+				}
+				
+					if instance_place(x,y,O_BananBulletBig) {
+									owner.xspeed = instance_place(x,y,O_BananBulletBig).xspeed * 0.5 ;
+				if instance_place(x,y,O_BananBulletBig).x > owner.x then owner.xspeed = -abs(owner.xspeed)
+				owner.xoffset = owner.x + sign(owner.xspeed)*8
+				with owner {
+							event_user(0);
+						}
+						global.stoptimer = 5;
+					
+					with instance_place(x,y,O_BananBulletBig)	{
+						instance_destroy();	
+					}
+				}
+				
+			}
+			break;
+		}
 	
 		
 		
 	}
+
+
+}

@@ -1,18 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"O_BananBullet",
+  "%Name":"O_Barrel",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"O_BananBullet",
+  "name":"O_Barrel",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"O_Obstacle",
+    "path":"objects/O_Obstacle/O_Obstacle.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_BananBullet",
-    "path":"sprites/S_BananBullet/S_BananBullet.yy",
+    "name":"S_Barrel",
+    "path":"sprites/S_Barrel/S_Barrel.yy",
   },
   "spriteMaskId":null,
   "visible":true,
