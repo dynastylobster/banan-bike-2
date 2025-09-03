@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_create_depth(x,y,depth+1,O_Shadow);
+//instance_create_depth(x,y,depth+1,O_Shadow);
 event_inherited();
 hit = false;
 hittimer = 0;

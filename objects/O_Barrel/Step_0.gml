@@ -51,5 +51,6 @@ while place_meeting(x,y,[SLOPE]) {
 		yspeed = 0;
 		y--;
 	}
+
 	
 }

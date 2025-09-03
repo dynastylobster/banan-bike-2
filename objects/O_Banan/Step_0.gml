@@ -267,6 +267,8 @@ if hit = true {
 if hittimer > 0 hittimer--;
 if hittimer <= 0 hit = false;
 
+hp = clamp(hp,0,10)
+
 if alarm[0] > 0 {if global.stop = true then alarm[0]++}
 if alarm[1] > 0 {if global.stop = true then alarm[1]++}
 if alarm[3] > 0 {if global.stop = true then alarm[3]++}

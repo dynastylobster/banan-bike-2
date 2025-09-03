@@ -6,6 +6,7 @@ GenerateHitBox(x,y,24,13,-12,-24,O_Banan,0)
 GenerateHitBox(x,y,8,5,22,-2,O_Banan,1)
 GenerateHitBox(x,y,8,5,-24,0,O_Banan,2)
 audio_sound_gain(SndCharge,0,0)
+hp = 5;
 hit = false;
 hittimer = 0;
 exhausttimer = 0;

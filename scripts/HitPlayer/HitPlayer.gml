@@ -9,6 +9,7 @@ function HitPlayer(_knockback){
 				O_Banan.hittimer = 30;
 				if x > O_Banan.x then {O_Banan.x-= 2}
 				if x < O_Banan.x then {O_Banan.x+= 2}
+			O_Banan.hp -= 1
 			}
 			O_Banan.hit = true;
 			global.stoptimer = 8;
