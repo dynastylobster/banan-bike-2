@@ -69,6 +69,7 @@
     {"name":"O_BananBullet","order":6,"path":"objects/O_BananBullet/O_BananBullet.yy",},
     {"name":"O_BananBulletBig","order":7,"path":"objects/O_BananBulletBig/O_BananBulletBig.yy",},
     {"name":"O_Barrel","order":5,"path":"objects/O_Barrel/O_Barrel.yy",},
+    {"name":"O_EnemyBiker","order":8,"path":"objects/O_EnemyBiker/O_EnemyBiker.yy",},
     {"name":"O_Exhaust","order":4,"path":"objects/O_Exhaust/O_Exhaust.yy",},
     {"name":"O_GameObject","order":1,"path":"objects/O_GameObject/O_GameObject.yy",},
     {"name":"O_Hitbox","order":8,"path":"objects/O_Hitbox/O_Hitbox.yy",},

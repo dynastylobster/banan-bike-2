@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"S_Wall",
+    "path":"sprites/S_Wall/S_Wall.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

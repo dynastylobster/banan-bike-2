@@ -17,10 +17,7 @@
     {"name":"inst_1176C166","path":"rooms/R_Game/R_Game.yy",},
     {"name":"inst_242E9641","path":"rooms/R_Game/R_Game.yy",},
     {"name":"inst_208B5CC0","path":"rooms/R_Game/R_Game.yy",},
-    {"name":"inst_58CBB5DA","path":"rooms/R_Game/R_Game.yy",},
-    {"name":"inst_33D3487A","path":"rooms/R_Game/R_Game.yy",},
-    {"name":"inst_3FE0F4B0","path":"rooms/R_Game/R_Game.yy",},
-    {"name":"inst_253D1873","path":"rooms/R_Game/R_Game.yy",},
+    {"name":"inst_65214C2B","path":"rooms/R_Game/R_Game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -46,16 +43,7 @@
         {"$GMRInstance":"v1","%Name":"inst_208B5CC0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_208B5CC0","objectId":{"name":"O_Barrel","path":"objects/O_Barrel/O_Barrel.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_All","path":"objects/O_All/O_All.yy",},"propertyId":{"name":"y_offset","path":"objects/O_All/O_All.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"48",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1232.0,"y":304.0,},
-        {"$GMRInstance":"v1","%Name":"inst_58CBB5DA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58CBB5DA","objectId":{"name":"O_Obstacle","path":"objects/O_Obstacle/O_Obstacle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":304.0,"y":256.0,},
-        {"$GMRInstance":"v1","%Name":"inst_33D3487A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33D3487A","objectId":{"name":"O_Obstacle","path":"objects/O_Obstacle/O_Obstacle.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_All","path":"objects/O_All/O_All.yy",},"propertyId":{"name":"y_offset","path":"objects/O_All/O_All.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"16",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":336.0,"y":256.0,},
-        {"$GMRInstance":"v1","%Name":"inst_3FE0F4B0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3FE0F4B0","objectId":{"name":"O_Obstacle","path":"objects/O_Obstacle/O_Obstacle.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_All","path":"objects/O_All/O_All.yy",},"propertyId":{"name":"y_offset","path":"objects/O_All/O_All.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"32",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":256.0,},
-        {"$GMRInstance":"v1","%Name":"inst_253D1873","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_253D1873","objectId":{"name":"O_Obstacle","path":"objects/O_Obstacle/O_Obstacle.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_All","path":"objects/O_All/O_All.yy",},"propertyId":{"name":"y_offset","path":"objects/O_All/O_All.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"48",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":256.0,},
+        {"$GMRInstance":"v1","%Name":"inst_65214C2B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_65214C2B","objectId":{"name":"O_EnemyBiker","path":"objects/O_EnemyBiker/O_EnemyBiker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":592.0,"y":304.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"ColTiles","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRTileLayer":"","%Name":"ColTileSemi","depth":300,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ColTileSemi","properties":[

@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_EnemyBiker",
-    "path":"sprites/S_EnemyBiker/S_EnemyBiker.yy",
+    "name":"S_Barrel",
+    "path":"sprites/S_Barrel/S_Barrel.yy",
   },
   "spriteMaskId":null,
   "visible":true,

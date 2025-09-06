@@ -12,6 +12,8 @@ function HitPlayer(_knockback){
 			O_Banan.hp -= 1
 			}
 			O_Banan.hit = true;
+			if global.stoptimer = 0 {
 			global.stoptimer = 8;
+			}
 			
 }

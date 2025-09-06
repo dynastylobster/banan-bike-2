@@ -93,6 +93,7 @@
     {"id":{"name":"O_BananBullet","path":"objects/O_BananBullet/O_BananBullet.yy",},},
     {"id":{"name":"O_BananBulletBig","path":"objects/O_BananBulletBig/O_BananBulletBig.yy",},},
     {"id":{"name":"O_Barrel","path":"objects/O_Barrel/O_Barrel.yy",},},
+    {"id":{"name":"O_EnemyBiker","path":"objects/O_EnemyBiker/O_EnemyBiker.yy",},},
     {"id":{"name":"O_Exhaust","path":"objects/O_Exhaust/O_Exhaust.yy",},},
     {"id":{"name":"O_GameObject","path":"objects/O_GameObject/O_GameObject.yy",},},
     {"id":{"name":"O_Hitbox","path":"objects/O_Hitbox/O_Hitbox.yy",},},

@@ -106,6 +106,54 @@ switch owner.object_index {
 			}
 			break;
 		}
+		
+		case O_EnemyBiker: {
+			if hitboxnum = 0 {
+			y = owner.y - owner.y_offset -yoffset
+			x = owner.x - (xoffset)
+			
+		if place_meeting(x+(owner.facing*4),y+6,O_JumpPoint) and owner.jumped = false {
+				with (owner) {event_user(1)};
+		}
+		
+		if place_meeting(x,y,O_Banan.hitbox[0]) {
+		if owner.y_offset = O_Banan.y_offset {
+		if !O_Banan.hit	HitPlayer(5)
+		}
+		}
+			
+			}
+			
+			if hitboxnum = 3 {
+			y = owner.y - owner.y_offset -yoffset
+			x = owner.x - xoffset
+				if place_meeting(x,y,O_BananBullet) {
+				with (owner) {
+					event_user(0);
+				}
+			with instance_nearest(x,y,O_BananBullet) {
+				instance_destroy();
+				}
+			}
+				}
+			if hitboxnum = 1 {
+				
+				y = owner.y
+				if owner.facing = 1 x = owner.x + 24
+				if owner.facing = -1 x = owner.x - 24
+				owner.sloping = place_meeting(x,y,[SLOPE])
+			}
+			if hitboxnum = 2 {
+				
+				y = owner.y
+				if owner.facing = 1 x = owner.x - 24
+				if owner.facing = -1 x = owner.x + 24
+				owner.slopingbehind = place_meeting(x,y,[SLOPE])
+			}
+			break;
+				
+			break;
+			}
 	
 		
 		
