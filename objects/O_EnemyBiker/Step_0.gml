@@ -2,6 +2,9 @@
 // You can write your code in this editor
 CheckOnscreen(true,false);
 
+image_speed = abs(xspeed)*2
+if xspeed < -5 xspeed = -5
+if xspeed > 5 xspeed = 5
 image_xscale = facing
 
 if onscreen {

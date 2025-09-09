@@ -426,6 +426,7 @@
     {"id":{"name":"B_GameBG_3","path":"sprites/B_GameBG_3/B_GameBG_3.yy",},},
     {"id":{"name":"B_GameBG_4","path":"sprites/B_GameBG_4/B_GameBG_4.yy",},},
     {"id":{"name":"B_GameBG","path":"sprites/B_GameBG/B_GameBG.yy",},},
+    {"id":{"name":"drawingthisherebecausethespriteeditorisgood","path":"sprites/drawingthisherebecausethespriteeditorisgood/drawingthisherebecausethespriteeditorisgood.yy",},},
     {"id":{"name":"S_Banan_MuzzleFlash","path":"sprites/S_Banan_MuzzleFlash/S_Banan_MuzzleFlash.yy",},},
     {"id":{"name":"S_Banan_MuzzleFlashBig","path":"sprites/S_Banan_MuzzleFlashBig/S_Banan_MuzzleFlashBig.yy",},},
     {"id":{"name":"S_Banan_Shoot","path":"sprites/S_Banan_Shoot/S_Banan_Shoot.yy",},},

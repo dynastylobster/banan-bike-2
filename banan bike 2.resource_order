@@ -367,6 +367,7 @@
     {"name":"B_GameBG_3","order":9,"path":"sprites/B_GameBG_3/B_GameBG_3.yy",},
     {"name":"B_GameBG_4","order":10,"path":"sprites/B_GameBG_4/B_GameBG_4.yy",},
     {"name":"B_GameBG","order":6,"path":"sprites/B_GameBG/B_GameBG.yy",},
+    {"name":"drawingthisherebecausethespriteeditorisgood","order":14,"path":"sprites/drawingthisherebecausethespriteeditorisgood/drawingthisherebecausethespriteeditorisgood.yy",},
     {"name":"S_Banan_MuzzleFlashBig","order":1,"path":"sprites/S_Banan_MuzzleFlashBig/S_Banan_MuzzleFlashBig.yy",},
     {"name":"S_Banan_Shoot","order":3,"path":"sprites/S_Banan_Shoot/S_Banan_Shoot.yy",},
     {"name":"S_Banan_Slope1_Shoot","order":5,"path":"sprites/S_Banan_Slope1_Shoot/S_Banan_Slope1_Shoot.yy",},
