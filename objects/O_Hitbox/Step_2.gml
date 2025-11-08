@@ -168,8 +168,36 @@ switch owner.object_index {
 }
 
 if following {
+	
 		x = owner.x + xoffset
-		y = owner.y + yoffset
+		if variable_instance_exists(owner,"y_offset") {  
+		y = owner.y + yoffset - owner.y_offset
+		} else {y = owner.y + yoffset}
+		
+		//enemy specific stuff
+			switch owner.object_index {
+				case O_All:{
+					
+				}
+				break;
+				
+				case O_EnemyBiker: {
+					if hitboxnum = 0 {
+		if place_meeting(x+(owner.facing*4),y+6,O_JumpPoint) and owner.jumped = false {
+				with(owner) {event_user(1)};
+		}
+		
+		if place_meeting(x,y,O_Banan.hitbox[0]) {
+		if owner.y_offset = O_Banan.y_offset {
+		if !O_Banan.hit	HitPlayer(5)
+		}
+		}
+			
+			}
+				}
+				break
+			}
+		
 	}
 
 
