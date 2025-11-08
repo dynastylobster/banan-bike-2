@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"banan bike 2",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -76,6 +76,7 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"gamecontrollerdb.txt","CopyToMask":-1,"filePath":"datafiles","name":"gamecontrollerdb.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"input_license.txt","CopyToMask":-1,"filePath":"datafiles","name":"input_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -83,7 +84,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"banan bike 2",
   "resources":[
@@ -107,6 +108,7 @@
     {"id":{"name":"O_Semi","path":"objects/O_Semi/O_Semi.yy",},},
     {"id":{"name":"O_Shadow","path":"objects/O_Shadow/O_Shadow.yy",},},
     {"id":{"name":"O_Slope","path":"objects/O_Slope/O_Slope.yy",},},
+    {"id":{"name":"O_Tree","path":"objects/O_Tree/O_Tree.yy",},},
     {"id":{"name":"O_Wall","path":"objects/O_Wall/O_Wall.yy",},},
     {"id":{"name":"R_Boot","path":"rooms/R_Boot/R_Boot.yy",},},
     {"id":{"name":"R_Game","path":"rooms/R_Game/R_Game.yy",},},
@@ -462,6 +464,8 @@
     {"id":{"name":"S_Slope","path":"sprites/S_Slope/S_Slope.yy",},},
     {"id":{"name":"S_SmallFont","path":"sprites/S_SmallFont/S_SmallFont.yy",},},
     {"id":{"name":"S_TrackTiles","path":"sprites/S_TrackTiles/S_TrackTiles.yy",},},
+    {"id":{"name":"S_TreeLeaves","path":"sprites/S_TreeLeaves/S_TreeLeaves.yy",},},
+    {"id":{"name":"S_TreeTrunk","path":"sprites/S_TreeTrunk/S_TreeTrunk.yy",},},
     {"id":{"name":"S_Wall","path":"sprites/S_Wall/S_Wall.yy",},},
     {"id":{"name":"T_ColTiles","path":"tilesets/T_ColTiles/T_ColTiles.yy",},},
     {"id":{"name":"T_TrackTiles","path":"tilesets/T_TrackTiles/T_TrackTiles.yy",},},

@@ -1,12 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if !instance_exists(owner) {
+		instance_destroy();
+		exit;
+	}
+
 x = owner.x + xoffset
 //y = owner.y + yoffset
 
+if instance_exists(owner) {
+
 if !global.stop {
 	
-	
+if !following {
 switch owner.object_index {
 	
 		case  O_OnScreenTest : {
@@ -158,6 +165,14 @@ switch owner.object_index {
 		
 		
 	}
+}
 
+if following {
+		x = owner.x + xoffset
+		y = owner.y + yoffset
+	}
+
+
+}
 
 }

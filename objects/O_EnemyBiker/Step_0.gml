@@ -3,8 +3,8 @@
 CheckOnscreen(true,false);
 
 image_speed = abs(xspeed)*2
-if xspeed < -5 xspeed = -5
-if xspeed > 5 xspeed = 5
+if xspeed < -3 xspeed = -3
+if xspeed > 3 xspeed = 3
 image_xscale = facing
 
 if onscreen {
@@ -48,3 +48,7 @@ if onscreen {
 	
 if sloping sprite_index = S_EnemyBikerSlope1
 if !sloping and yspeed > 2 sprite_index = S_EnemyBiker
+
+if hp = 0 {
+		instance_destroy();
+	}
